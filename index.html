@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Option 2: Student Management System</h1>
+
+<form id="studentForm">
+  <input type="hidden" id="index">
+
+  <input type="text" id="studentId" placeholder="Student ID" required>
+  <input type="text" id="name" placeholder="Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="text" id="course" placeholder="Course" required>
+  <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+  <button type="submit">Save Student</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Course</th>
+      <th>Mobile</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="studentTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
